@@ -1,0 +1,105 @@
+body {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* ----------------------------------------- Form Styling Start ------------------------------------------------------------ */
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__input:checked ~ .form__table-tennis {
+  background-image: url("../images/table-tennis.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form__input:checked ~ .form__basketball {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-image: url("../images/basketball-ball.png");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form__input:checked ~ .form__valleyball {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-image: url("../images/volleyball-ball.png");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form__input:checked ~ .form__hockey {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-image: url("../images/hockey-puck.png");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
+
+.form__input:disabled ~ span,
+.desc {
+  opacity: 0.4;
+}
+
+.form__button {
+  border: 2px solid #222;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* ----------------------------------------- Form Styling End ---------------------------------- */

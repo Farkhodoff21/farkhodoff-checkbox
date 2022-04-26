@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Project Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Main.min CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!--  Style CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <title>Checkbox exercise</title>
+  </head>
+  <body>
+    <h1>Qaysi sport turiga qiziqasiz ?</h1>
+    <form class="form" action="http://echo.htmlacademy.ru/" method="POST">
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="Table_tennis"
+          value="Table-tennis"
+        />
+        <span class="form__table-tennis"></span>
+        <p>Stol tennisi</p>
+      </label>
+
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="Basketball"
+          value="Basketball"
+        />
+        <span class="form__basketball"></span>
+        <p>Basketbol</p>
+      </label>
+
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="Valleyball"
+          value="Valleyball"
+        />
+        <span class="form__valleyball"></span>
+        <p>Voleybol</p>
+      </label>
+
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="Hockey"
+          value="Hockey"
+        />
+        <span class="form__hockey"></span>
+        <p>Hokkey</p>
+      </label>
+
+      <hr />
+      <h2>Disabled and checked forms</h2>
+      <hr />
+
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="hockey"
+          checked
+          disabled
+        />
+        <span class="form__hockey"></span>
+        <p class="desc">Hokkey</p>
+      </label>
+
+      <label class="form__label">
+        <input
+          class="form__input visually-hidden"
+          type="checkbox"
+          name="hockey"
+          disabled
+        />
+        <span class="form__hockey"></span>
+        <p class="desc">Hokkey</p>
+      </label>
+      <button class="form__btn" type="submit">Send Form</button>
+    </form>
+  </body>
+</html>
